@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(225deg, rgb(56, 22, 209), rgb(218, 33, 202));
+}
+
+.box {
+    height: 25vh;
+    width: 70vw;
+    border-radius: calc(1vh + 1vw);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 13, 13);
+}
+
+.box h1 {
+    padding: 3vh 2vw;
+    font-size: calc(2vh + 2vw);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.box p {
+    padding: 1vh 2vw;
+    font-size: calc(1vh + 1.5vw);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+}
+
+#b1 {
+    color: rgb(255, 81, 0);
+}
+
+#b2 {
+    color: rgb(0, 119, 255);
+}
+
+#b3 {
+    color: rgb(255, 208, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        align-items: center;
+    }
+    .box h1{
+        font-size: calc(3vh + 3vw);
+    }
+    .box p{
+        font-size: calc(2vh + 2vw);
+        text-align: center;
+    }
+}
+
